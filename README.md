@@ -244,7 +244,7 @@ There are several datasets that are prescribed for you to use in this part. Belo
     )
     ```
 
-    **Discussion:**
+    **Discussion:** I define Penn’s main campus using the OpenStreetMap “University of Pennsylvania” boundary (relation 2594845), exported via Overpass Turbo, loaded into PostGIS with ogr2ogr, and dissolve the campus geometry and count 2020 census block groups fully covered by this campus polygon.
 
 9. With a query involving PWD parcels and census block groups, find the `geo_id` of the block group that contains Meyerson Hall. `ST_MakePoint()` and functions like that are not allowed.
 
